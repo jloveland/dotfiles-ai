@@ -1,0 +1,66 @@
+# freshshell.com
+# See http://freshshell.com/readme for documentation.
+
+# handles updating fresh
+fresh freshshell/fresh bin/fresh --bin
+fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
+fresh freshshell/fresh-open bin/fresh-open --bin
+
+## Local Files
+
+# links your local ~/.dotfiles/git/gitconfig to ~/.gitconfig (you can change your local directory by setting $FRESH_LOCAL)
+fresh git/gitconfig --file
+fresh git/gitignore --file
+
+# Path
+# functions to cleanly manipulate path
+# fresh andschwa/shell .path_edit.sh
+
+## Shell files
+fresh shell/aliases/\*
+fresh shell/functions/\*
+
+# Zsh
+
+fresh-options --file=~/.zshrc --marker
+  # local zsh dotfiles
+  fresh shell/zsh/aliases.zsh
+  fresh shell/zsh/zshrc
+  fresh shell/zsh/keys.zsh
+
+  # oh-my-zsh
+  fresh robbyrussell/oh-my-zsh plugins/node/node.plugin.zsh
+  fresh robbyrussell/oh-my-zsh plugins/npm/npm.plugin.zsh
+  fresh robbyrussell/oh-my-zsh plugins/git/git.plugin.zsh
+  fresh robbyrussell/oh-my-zsh plugins/ruby/ruby.plugin.zsh
+  fresh robbyrussell/oh-my-zsh plugins/gem/gem.plugin.zsh
+  fresh robbyrussell/oh-my-zsh plugins/jira/jira.plugin.zsh
+  fresh robbyrussell/oh-my-zsh plugins/jsontools/jsontools.plugin.zsh
+  fresh robbyrussell/oh-my-zsh plugins/brew/brew.plugin.zsh
+  fresh robbyrussell/oh-my-zsh plugins/bower/bower.plugin.zsh
+  fresh bjeanes/dot-files shells/zsh/lib/completion-waiting-dots.zsh
+
+  # this loads the shell files and needs to be at the bottom of the zshrc for
+  # compdef to be availiable
+  fresh freshshell/fresh contrib/source-build.sh
+
+fresh-options
+
+## Bin Files
+
+fresh jasoncodes/dotfiles bin/gemdiff --bin=~/bin/gem-diff
+fresh holman/dotfiles bin/e --bin=~/bin/e
+fresh pengwynn/dotfiles bin/git-ci --bin
+fresh pengwynn/dotfiles bin/git-go --bin
+
+## Config Files
+
+fresh-options --file
+  fresh vim/vimrc
+  fresh jasoncodes/dotfiles config/inputrc
+  fresh jasoncodes/dotfiles config/ackrc
+  fresh twe4ked/dotfiles config/pryrc
+  fresh jasoncodes/dotfiles config/gemrc
+  fresh mathiasbynens/dotfiles .wgetrc
+  fresh mathiasbynens/dotfiles .curlrc
+fresh-options

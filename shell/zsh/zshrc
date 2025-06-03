@@ -1,0 +1,39 @@
+# Path to your oh-my-zsh installation.
+export ZSH=$HOME/.oh-my-zsh
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+ZSH_THEME="steeef"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(aws poetry)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+export PATH="/opt/homebrew/bin:./bin:/usr/local/bin:/usr/local/sbin:/Users/$USER/.oh-my-zsh/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH"
+
+# Rbenv
+export PATH="$HOME/.rbenv/shims:$PATH"
+# Load rbenv automatically
+eval "$(rbenv init -)"
+
+# shortcut to this dotfiles path is $DOT
+export DOT=$HOME/.dotfiles
+
+# Brewfile
+export BREWFILE=$DOT/Brewfile
+
+# your project folder that we can `c [tab]` to
+export PROJECTS=~/Code
+
+# use .localrc for SUPER SECRET CRAP that you don't
+# want in your public, versioned repo.
+if [[ -a ~/.localrc ]]
+then
+  source ~/.localrc
+fi

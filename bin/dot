@@ -1,0 +1,28 @@
+#!/bin/sh
+#
+# dot
+#
+# `dot` handles updates things like that. Run it periodically
+# to make sure you're on the latest and greatest.
+export DOT="$HOME/.dotfiles"
+
+cd $DOT
+
+# Update freshshell and freshen sources
+fresh update
+
+# Update homebrew and caskroom, install homebrew and caskroom packages
+echo "Updating homebrew and caskroom"
+brew update
+brew outdated --greedy
+echo "Installing homebrew and caskroom packages"
+brew upgrade
+# upgrade casks
+brew upgrade --greedy
+brew bundle
+brew cu
+brew cleanup
+brew autoremove
+
+echo "Create Brewfile"
+brew bundle dump --force --describe --file="${BREWFILE}"
