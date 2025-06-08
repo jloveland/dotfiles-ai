@@ -12,9 +12,6 @@ then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" > /tmp/homebrew-install.log
 fi
 
-# Leverage Brewdler to install non-ruby dependencies from homebrew
-brew tap Homebrew/bundle
-
 # Make sure we’re using the latest Homebrew
 brew update
 
