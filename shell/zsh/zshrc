@@ -17,11 +17,6 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export PATH="/opt/homebrew/bin:./bin:/usr/local/bin:/usr/local/sbin:/Users/$USER/.oh-my-zsh/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH"
 
-# Rbenv
-export PATH="$HOME/.rbenv/shims:$PATH"
-# Load rbenv automatically
-eval "$(rbenv init -)"
-
 # shortcut to this dotfiles path is $DOT
 export DOT=$HOME/.dotfiles
 

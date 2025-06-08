@@ -21,8 +21,6 @@ brew "bash-completion"
 brew "cmake"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
-# Pack, ship and run any application as a lightweight container
-brew "docker", link: false
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Collection of GNU find, xargs, and locate
