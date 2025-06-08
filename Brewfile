@@ -1,5 +1,4 @@
 tap "buo/cask-upgrade"
-
 # Search tool like grep, but optimized for programmers
 brew "ack"
 # General-purpose data compression with high compression ratio
@@ -56,8 +55,6 @@ brew "nmap"
 brew "nvm"
 # Create, run, and share large language models (LLMs)
 brew "ollama", link: false
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
 # 7-Zip (high compression file archiver) implementation
 brew "p7zip"
 # Execute binaries from Python packages in isolated environments
