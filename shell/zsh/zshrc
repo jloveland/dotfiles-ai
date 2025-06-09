@@ -15,7 +15,7 @@ plugins=(aws poetry)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export PATH="/opt/homebrew/bin:./bin:/usr/local/bin:/usr/local/sbin:/Users/$USER/.oh-my-zsh/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH"
+export PATH="/Users/$USER/bin:/opt/homebrew/bin:./bin:/usr/local/bin:/usr/local/sbin:/Users/$USER/.oh-my-zsh/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH"
 
 # shortcut to this dotfiles path is $DOT
 export DOT=$HOME/.dotfiles
