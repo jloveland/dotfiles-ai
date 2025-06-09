@@ -38,7 +38,6 @@ fresh-options --file=~/.zshrc --marker
   fresh robbyrussell/oh-my-zsh plugins/jsontools/jsontools.plugin.zsh
   fresh robbyrussell/oh-my-zsh plugins/brew/brew.plugin.zsh
   fresh robbyrussell/oh-my-zsh plugins/bower/bower.plugin.zsh
-  fresh bjeanes/dot-files shells/zsh/lib/completion-waiting-dots.zsh
 
   # this loads the shell files and needs to be at the bottom of the zshrc for
   # compdef to be availiable
