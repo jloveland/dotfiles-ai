@@ -4,8 +4,8 @@
 [hub]
         protocol = https
 [user]
-        name = 
-        email = 
+        name = Loveland Lobster
+        email = lovelandlobster@gmail.com
 [credential]
         helper = osxkeychain
 [alias]
