@@ -91,10 +91,8 @@ brew "wget"
 brew "zlib"
 # UNIX shell (command interpreter)
 brew "zsh"
-# Write, edit, and chat about your code with AI
-cask "cursor"
 # App to build and share containerised applications and microservices
-cask "docker"
+cask "docker-desktop"
 # Free and open-source image editor
 cask "gimp"
 # Web browser
@@ -106,7 +104,7 @@ cask "ngrok"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
 # Get up and running with large language models locally
-cask "ollama"
+cask "ollama-app"
 # Collaboration platform for API development
 cask "postman"
 # Team communication and collaboration software
@@ -117,7 +115,6 @@ cask "visual-studio-code"
 cask "vlc"
 # Video communication and virtual meeting platform
 cask "zoom"
-vscode "continue.continue"
 vscode "docker.docker"
 vscode "github.copilot"
 vscode "github.copilot-chat"
